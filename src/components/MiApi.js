@@ -41,7 +41,7 @@ const MiApi = ( {setBase} ) => {
 
     useEffect(() => {
         ApiQuery()
-    }, [])
+    },[])
     
     return(
         <>

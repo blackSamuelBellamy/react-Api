@@ -40,7 +40,7 @@ const Form = ({ base }) => {
         else {
             const VisaFalse = base.filter(jobs => jobs.visa === 'No')
             setMainList(VisaFalse)
-        }}, [visa])
+        }}, [visa, base])
 
 
     return (
