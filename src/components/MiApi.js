@@ -22,8 +22,7 @@ const MiApi = ( {setBase} ) => {
                 sueldo: job.annualSalaryFrom,
                 ciudad: job.actualCity,
                 visa: job.hasVisaSponsorship,
-                enlace: job.redirectJobUrl,
-                lenguajes: job.filterTags
+                enlace: job.redirectJobUrl
             }))
 
             setBase(dataBase)
@@ -34,14 +33,16 @@ const MiApi = ( {setBase} ) => {
         }
     }
 
+    useEffect(() => {
+        ApiQuery()  
+      })
+
     const reload = () => {
         setErr(false)
         window.location.reload()
     }
 
-    useEffect(() => {
-        ApiQuery()
-    },[])
+  
     
     return(
         <>
