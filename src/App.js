@@ -1,23 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import MiApi from './components/MiApi';
+import Form from './components/Form';
+import Button from './components/Button'
+import { useState } from 'react'
 
-function App() {
+
+const App = () => {
+  const [base, setBase] = useState([])
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <h1>Ofertas laborales en EEUU</h1>
+      <MiApi setBase={setBase} />
+      <Form base={base} setBase={setBase} />
+      <Button />
     </div>
   );
 }

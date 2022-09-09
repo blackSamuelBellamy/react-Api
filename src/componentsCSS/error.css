@@ -1,0 +1,32 @@
+.error {
+    position: absolute;
+    width: 70vw;
+    height: 80vh;
+    background: url(../../sources/loading-error.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 20;
+}
+
+.err-btn {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 3em;
+    width: 11em;
+    font-size: 1em;
+    background: #000;
+    outline: none;
+    border: 1px solid #000;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 5px 5px #ccc inset;
+    transition: .2s;
+
+}
+
+.err-btn:hover {
+    transform: translateX(-50%) scale(1.02);
+}
