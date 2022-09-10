@@ -51,6 +51,7 @@
 .formulario input:placeholder-shown {
     color: #fff;
     font-weight: 600;
+    background: transparent;
 }
 
 .setting {

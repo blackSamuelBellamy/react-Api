@@ -34,14 +34,14 @@ const MiApi = ( {setBase} ) => {
     }
 
     useEffect(() => {
-        ApiQuery()  
-      })
+        ApiQuery()
+        // eslint-disable-next-line
+      }, [])
 
     const reload = () => {
         setErr(false)
         window.location.reload()
     }
-
   
     
     return(
