@@ -1,5 +1,6 @@
 # Getting Started with Create React App
-
+video en youtube (https://youtu.be/r5dLvJP5wxk)
+deploy en netlify (https://react-api-jobs.netlify.app/)
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
